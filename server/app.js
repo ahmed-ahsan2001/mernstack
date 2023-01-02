@@ -4,17 +4,13 @@ const express = require("express");
 const app = express();
 mongoose.set("strictQuery", false);
 dotenv.config({ path: "./config.env" });
-const DB = process.env.DATABASE;
-//midle ware
+require("./db/conn");
+app.use(express.json());
 
-mongoose
-  .connect(DB)
-  .then(() => {
-    console.log("connected successfully");
-  })
-  .catch((err) => {
-    console.log("mo connection");
-  });
+const User = require("./model/userSchema");
+const PORT = process.env.PORT;
+//midle ware
+app.use(require("./router/auth"));
 const middleware = (req, res, next) => {
   console.log("hello my middleware");
 };
@@ -39,6 +35,6 @@ app.get("/signin", (req, res) => {
   res.send("hello world fron signin");
 });
 
-app.listen(3000, () => {
-  console.log("port is running at 3000");
+app.listen(PORT, () => {
+  console.log(`port is running at ${PORT}`);
 });
