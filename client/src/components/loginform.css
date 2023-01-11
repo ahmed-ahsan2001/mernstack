@@ -15,7 +15,21 @@ body {
   text-align: center;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-
+.h1-login {
+  background-color: white;
+}
+.wrapper input {
+  width: 92%;
+  outline: none;
+  border: 1px solid #fff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background: #e4e4e4;
+}
+.register-form {
+  background-color: white;
+}
 .register-form input {
   width: 92%;
   outline: none;
@@ -54,9 +68,26 @@ input:focus {
 .linknav {
   color: rgb(17, 107, 143);
   text-decoration: none;
+  background-color: white;
 }
 .member {
   font-size: 0.8rem;
   margin-top: 1.4rem;
   color: #636363;
+  background-color: white;
+}
+.recover {
+  text-align: right;
+  font-size: 0.7rem;
+  margin: 0.3rem 1.4rem 0 0;
+  background-color: white;
+}
+.h1-contact {
+  background-color: white;
+}
+.contactdiv {
+  background-color: white;
+}
+.contact_form_text {
+  background-color: white;
 }

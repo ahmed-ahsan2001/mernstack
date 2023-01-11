@@ -6,6 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Login from "./components/Login";
 import Registration from "./components/Registration";
+import "./App.css";
 const App = () => {
   return (
     <>

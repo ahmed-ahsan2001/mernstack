@@ -6,6 +6,12 @@
 body {
   background: #dfe9f5;
 }
+.h1-signup {
+  background-color: white;
+}
+.register-form {
+  background-color: white;
+}
 .wrapper {
   width: 330px;
   padding: 2rem 1rem;
@@ -44,24 +50,26 @@ input:focus {
 }
 .terms {
   margin-top: 0.2rem;
+  background-color: white;
 }
 .terms input {
   height: 1em;
   width: 1em;
   vertical-align: middle;
   cursor: pointer;
+  background-color: white;
 }
 .linknav {
   color: rgb(17, 107, 143);
   text-decoration: none;
+  background-color: white;
 }
 .member {
   font-size: 0.8rem;
   margin-top: 1.4rem;
   color: #636363;
+  background-color: white;
 }
-.recover {
-  text-align: right;
-  font-size: 0.7rem;
-  margin: 0.3rem 1.4rem 0 0;
+.label-signup {
+  background-color: white;
 }

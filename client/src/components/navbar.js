@@ -1,13 +1,17 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid" style={{ backgroundColor: "white" }}>
+        <div
+          className="container-fluid"
+          style={{ backgroundColor: "lightBlue" }}
+        >
           <NavLink className="navbar-brand" to="/">
-            Navbar
+            Simple Mern Website
           </NavLink>
           <button
             className="navbar-toggler"
