@@ -71,4 +71,10 @@ router.get("/about", authenticate, (req, res) => {
   res.send(req.rootUser);
 });
 
+router.get("/logout", (req, res) => {
+  console.log("hello my logout page");
+  res.clearCookie("jwtoken", { path: "/" });
+  res.status(200).send("user logout");
+});
+
 module.exports = router;
